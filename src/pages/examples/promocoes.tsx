@@ -1,7 +1,9 @@
 import Pagina from "@/components/template/Pagina";
 
 export async function getStaticProps() {
-  const dados = await fetch("http://localhost:3000/api/promocoes");
+  const dados = await fetch(
+    "https://fundamentos-react-rust.vercel.app/api/promocoes"
+  );
   const promocoes = await dados.json();
   const data = new Date().toLocaleTimeString("pt-br");
   return {
