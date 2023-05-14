@@ -9,7 +9,10 @@ import {
   IconClick,
   IconClock,
   IconComponents,
+  IconDatabase,
   IconH1,
+  IconNumbers,
+  IconRotate2,
   IconSitemap,
   IconSourceCode,
 } from "@tabler/icons-react";
@@ -90,6 +93,29 @@ export default function Home() {
             className="bg-gradient-to-r from-cyan-500 to bg-red-500"
           >
             Comunicação Indireta entre Componentes
+          </MenuItem>
+        </Linha>
+        <Linha>
+          <MenuItem
+            icone={<IconNumbers />}
+            url="/examples/estado"
+            className="bg-gradient-to-r from-blue-400 to bg-purple-600"
+          >
+            Com Estado
+          </MenuItem>
+          <MenuItem
+            icone={<IconDatabase />}
+            url="/examples/contexto"
+            className="bg-gradient-to-r from-blue-400 to bg-purple-600"
+          >
+            Contexto Compartilhado
+          </MenuItem>
+          <MenuItem
+            icone={<IconRotate2 />}
+            url="/examples/promocoes"
+            className="bg-gradient-to-r from-blue-400 to bg-purple-600"
+          >
+            Conteudo ServerSide
           </MenuItem>
         </Linha>
       </Menu>
